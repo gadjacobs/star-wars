@@ -6,7 +6,7 @@ const Starships = () => {
         <div>
             <Heading title="Popular Starships" />
             <div class="dt-ns dt--fixed-ns">
-                <div class="dtc-ns tc">
+                <div class="dtc-ns tc grow">
                     <article class="ba b--black-10 w-80 center">
                         <img
                         src={process.env.PUBLIC_URL + "/assets/starship-4.jpg"}
@@ -44,7 +44,7 @@ const Starships = () => {
                         </div>
                     </article>
                 </div>
-                <div class="dtc-ns tc">
+                <div class="dtc-ns tc grow">
                     <article class="ba b--black-10 w-80 center">
                         <img
                         src={process.env.PUBLIC_URL + "/assets/starship-2.jpg"}
@@ -82,7 +82,7 @@ const Starships = () => {
                         </div>
                     </article>
                 </div>
-                <div class="dtc-ns tc">
+                <div class="dtc-ns tc grow">
                     <article class="ba b--black-10 w-80 center">
                         <img
                         src={process.env.PUBLIC_URL + "/assets/starship-3.jpg"}
