@@ -21,8 +21,27 @@ input {
   font-size: 20px !important;
   font-weight: 500;
 }
+/* Slider */
+.container {
+  padding: 40px;
+}
 
-/* .searchbox {
-  background: url(%PUBLIC_URL%/assets/search.png) no-repeat scroll 7px 7px;
-  padding-left: 30px;
-} */
+.img-container {
+  position: relative;
+  text-align: center;
+  color: white;
+  font-family: "Montserrat", sans-serif !important;
+  font-size: 22px !important;
+}
+
+.text {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.slick-slide img {
+  margin: auto;
+  width: 90%;
+}
