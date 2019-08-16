@@ -3,7 +3,7 @@ import 'tachyons';
 import SearchBox from './SearchBox';
 import NavBar from './NavBar';
 
-const Header = () => {
+const Header = ({SearchChange}) => {
     return (
       <header class="sans-serif">
         <div
@@ -29,7 +29,7 @@ const Header = () => {
                 Find your favorite Characters, Films, Species,
               </h2>
               <h2 class="fw1 f3 white-80">Starships and Planets</h2>
-            <SearchBox />
+            <SearchBox SearchChange={SearchChange}/>
             </div>
           </div>
         </div>
