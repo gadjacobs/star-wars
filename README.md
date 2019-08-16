@@ -6,4 +6,4 @@ This is a simple React JS application that explores the [SWAPI](https://swapi.co
 
 Demo can be found [here](https://swapy.netlify.com/)
 
-###Developer: Gad Jacobs
+### Developer: Gad Jacobs
