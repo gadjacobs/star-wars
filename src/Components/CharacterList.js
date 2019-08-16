@@ -7,10 +7,11 @@ const CharacterList = ({people}) => {
         <div>
             <Heading title="Popular Characters" />
             <article class="cf">
-            {people.slice(0,4).map((user, i) => {
+            {people.slice(0,2).map((user, i) => {
         return (
           <Charatcters
             key={i}
+            id={i}
             name={people[i].name}
             gender={people[i].gender}
             birthYear={people[i].birth_year}

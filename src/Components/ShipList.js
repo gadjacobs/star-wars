@@ -8,7 +8,7 @@ const ShipList = ({ships}) => {
             <Heading title="Popular Starships" />
             <div class="mw9 center ph3-ns">
                 <div class="cf ph2-ns">
-            {ships.slice(0,6).map((user, i) => {
+            {ships.slice(0,3).map((user, i) => {
         return (
           <Starships
             key={i}

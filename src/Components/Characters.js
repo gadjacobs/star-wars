@@ -1,6 +1,11 @@
 import React from 'react';
 
 const Characters = ({name, gender, birthYear}) => {
+    const min=1;
+    const max=4;
+    const random =
+    Math.floor(Math.random() * (+max - +min)) + +min;
+
     return (
         <div>
 
@@ -10,7 +15,7 @@ const Characters = ({name, gender, birthYear}) => {
                 <div class="flex flex-column flex-row-ns">
                   <div class="pr3-ns mb4 mb0-ns w-100 w-40-ns">
                     <img
-                      src={process.env.PUBLIC_URL + "/assets/character-1.jpg"}
+                      src={process.env.PUBLIC_URL + `/assets/character-${random}.jpg`}
                       class="db"
                       alt=""
                     />

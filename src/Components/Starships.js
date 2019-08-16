@@ -1,12 +1,16 @@
 import React from 'react';
 
 const Starships = ({name, model, capacity}) => {
+    const min=1;
+    const max=6;
+    const random =
+    Math.floor(Math.random() * (+max - +min)) + +min;
     return (
         <div class="fl w-100 w-third-ns pa2">
                 <div class="pv4 tc grow">
                     <article class="ba b--black-10 w-90 center">
                         <img
-                        src={process.env.PUBLIC_URL + "/assets/starship-4.jpg"}
+                        src={process.env.PUBLIC_URL + `/assets/starship-${random}.jpg`}
                         class="db w-100 br--top"
                         alt=""
                         />

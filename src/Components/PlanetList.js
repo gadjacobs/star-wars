@@ -42,7 +42,7 @@ const PlanetList = ({planets}) => {
             <Heading title='Popular Planets' />
             <Slider {...settings}>
 
-            {planets.slice(0,6).map((user, i) => {
+            {planets.slice(0,3).map((user, i) => {
         return (
           <Planet
             key={i}
