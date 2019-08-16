@@ -40,7 +40,7 @@ input {
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
-  -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+  -webkit-text-fill-color: white;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: black;
   font-weight: bold;

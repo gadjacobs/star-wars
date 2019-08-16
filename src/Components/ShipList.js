@@ -2,7 +2,7 @@ import React from 'react';
 import Starships from './Starships';
 import Heading from './Heading';
 
-const ShipList = ({ships}) => {
+const ShipList = ({ships, onRouteChange}) => {
     return (
         <div>
             <Heading title="Popular Starships" />
@@ -19,6 +19,11 @@ const ShipList = ({ships}) => {
         );
       })}
         </div>
+</div>
+<div class="flex items-center justify-center pa4">
+  <button onClick={() => onRouteChange('ships')} class="f5 no-underline black bg-animate hover-bg-black hover-white inline-flex items-center pa3 ba border-box mr4 tc">
+    <span class="pl1">VIEW MORE</span>
+  </button>
 </div>
         </div>
     );

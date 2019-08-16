@@ -13,7 +13,7 @@ class App extends React.Component {
     super(props);
     this.state = {
       searchField: "",
-      route: "ships",
+      route: "home",
       starShips: [],
       characters: [],
       planets: []
