@@ -3,8 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "eslint": "^6.1.0",
+    "eslint-plugin-react-hooks": "^1.7.0",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
+    "react-js-pagination": "^3.0.2",
     "react-scripts": "3.1.0",
     "react-slick": "^0.25.2",
     "react-spinkit": "^3.0.0",
