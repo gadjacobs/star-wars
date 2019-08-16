@@ -5,12 +5,15 @@ import PlanetList from './Components/PlanetList';
 import CharacterList from './Components/CharacterList';
 import './App.css';
 import Spinner from 'react-spinkit';
+import AllPeople from './Components/AllPeople';
+import AllShips from './Components/AllShips';
 
 class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
       searchField: "",
+      route: "ships",
       starShips: [],
       characters: [],
       planets: []
@@ -36,6 +39,11 @@ class App extends React.Component {
   onSearchChange = event => {
     this.setState({ searchField: event.target.value });
   };
+
+  onRouteChange = route => {
+    this.setState({ route: route });
+  };
+
   render() {
 
     const { characters, planets, starShips, searchField } = this.state;
@@ -69,6 +77,8 @@ class App extends React.Component {
       searchPhrase = <h2 className="tc" >Showing search results for: {searchField}</h2>
     }
 
+    const {route} = this.state;
+
     return !characters.length && !starShips.length && !planets.length ? (
       <article class="vh-100 dt w-100">
         <div class="dtc v-mid tc white ph3 ph4-l">
@@ -78,12 +88,24 @@ class App extends React.Component {
         </div>
       </article>
     ) : (
-      <div>
+    <div>
       <Header SearchChange={this.onSearchChange} />
       {searchPhrase}
-      <ShipList ships={filteredShips} />
-      <PlanetList planets={filteredPlanets} />
-      <CharacterList people={filteredPeople} />
+      {route === 'people' ? (
+      <div>
+        <AllPeople onRouteChange={this.onRouteChange} people={filteredPeople} />
+      </div>
+      ) : route === 'ships' ? (
+        <div>
+          <AllShips onRouteChange={this.onRouteChange} ships={filteredShips} />
+        </div>
+      ) : (
+        <div>
+          <ShipList onRouteChange={this.onRouteChange} ships={filteredShips} />
+          <PlanetList planets={filteredPlanets} />
+          <CharacterList onRouteChange={this.onRouteChange} people={filteredPeople} />
+        </div>
+      )}
     </div>
     );
   }
