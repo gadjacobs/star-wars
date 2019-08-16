@@ -28,7 +28,7 @@ class AllPeople extends React.Component {
             key={number}
             className={`f5 no-underline black bg-animate hover-bg-black hover-white inline-flex items-center pa3 ba border-box ${classes}`}
           >
-            <span class="pr1">{number}</span>
+            <span className="pr1">{number}</span>
           </button>
         );
       });
@@ -49,19 +49,19 @@ class AllPeople extends React.Component {
             );
           })}
         </article>
-        <div class="flex items-center justify-center pa4">
+        <div className="flex items-center justify-center pa4">
         <button
             onClick={() => fetch(1)}
-            class="f5 no-underline black bg-animate hover-bg-black hover-white inline-flex items-center pa3 ba border-box"
+            className="f5 no-underline black bg-animate hover-bg-black hover-white inline-flex items-center pa3 ba border-box"
           >
-            <span class="pl1">First</span>
+            <span className="pl1">First</span>
           </button>
           {renderPageNumbers}
           <button
             onClick={() => fetch(2)}
-            class="f5 no-underline black bg-animate hover-bg-black hover-white inline-flex items-center pa3 ba border-box"
+            className="f5 no-underline black bg-animate hover-bg-black hover-white inline-flex items-center pa3 ba border-box"
           >
-            <span class="pr1">Last</span>
+            <span className="pr1">Last</span>
           </button>
         </div>
       </div>

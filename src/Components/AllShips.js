@@ -28,7 +28,7 @@ class AllShips extends React.Component {
             key={number}
             className={`f5 no-underline black bg-animate hover-bg-black hover-white inline-flex items-center pa3 ba border-box ${classes}`}
           >
-            <span class="pr1">{number}</span>
+            <span className="pr1">{number}</span>
           </button>
         );
       });
@@ -36,8 +36,8 @@ class AllShips extends React.Component {
     return (
       <div>
         <Heading title="Popular Starships" />
-        <div class="mw9 center ph3-ns">
-          <div class="cf ph2-ns">
+        <div className="mw9 center ph3-ns">
+          <div className="cf ph2-ns">
             {ships.map((user, i) => {
               return (
                 <Starships
@@ -50,19 +50,19 @@ class AllShips extends React.Component {
             })}
           </div>
         </div>
-        <div class="flex items-center justify-center pa4">
+        <div className="flex items-center justify-center pa4">
           <button
             onClick={() => fetch(1)}
-            class="f5 no-underline black bg-animate hover-bg-black hover-white inline-flex items-center pa3 ba border-box"
+            className="f5 no-underline black bg-animate hover-bg-black hover-white inline-flex items-center pa3 ba border-box"
           >
-            <span class="pl1">First</span>
+            <span className="pl1">First</span>
           </button>
           {renderPageNumbers}
           <button
             onClick={() => fetch(2)}
-            class="f5 no-underline black bg-animate hover-bg-black hover-white inline-flex items-center pa3 ba border-box"
+            className="f5 no-underline black bg-animate hover-bg-black hover-white inline-flex items-center pa3 ba border-box"
           >
-            <span class="pr1">Last</span>
+            <span className="pr1">Last</span>
           </button>
         </div>
       </div>

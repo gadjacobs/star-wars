@@ -111,9 +111,9 @@ class App extends React.Component {
     const { route } = this.state;
 
     return !characters.length && !starShips.length && !planets.length ? (
-      <article class="vh-100 dt w-100">
-        <div class="dtc v-mid tc white ph3 ph4-l">
-          <h2 class="f6 f2-m f-subheadline-l fw6 tc">
+      <article className="vh-100 dt w-100">
+        <div className="dtc v-mid tc white ph3 ph4-l">
+          <h2 className="f6 f2-m f-subheadline-l fw6 tc">
             <Spinner name="line-scale" />
           </h2>
         </div>
@@ -129,7 +129,7 @@ class App extends React.Component {
               people={filteredPeople}
               fetch={this.fetchPeople}
               total={people_total}
-              page={ships_current_page}
+              page={people_current_page}
               perPage={people_per_page}
             />
           </div>

@@ -6,35 +6,35 @@ const Starships = ({name, model, capacity}) => {
     const random =
     Math.floor(Math.random() * (+max - +min)) + +min;
     return (
-        <div class="fl w-100 w-third-ns pa2">
-                <div class="pv4 tc grow">
-                    <article class="ba b--black-10 w-90 center">
+        <div className="fl w-100 w-third-ns pa2">
+                <div className="pv4 tc grow">
+                    <article className="ba b--black-10 w-90 center">
                         <img
                         src={process.env.PUBLIC_URL + `/assets/starship-${random}.jpg`}
-                        class="db w-100 br--top"
+                        className="db w-100 br--top"
                         alt=""
                         height="200px"
                         />
-                        <div class="pa2 tl ph3-ns pb3-ns">
-                        <div class="dt w-100 mt1">
-                            <div class="dtc">
-                            <h2 class="f5 f4-ns mv0">{name}</h2>
+                        <div className="pa2 tl ph3-ns pb3-ns">
+                        <div className="dt w-100 mt1">
+                            <div className="dtc">
+                            <h2 className="f5 f4-ns mv0">{name}</h2>
                             </div>
                         </div>
-                        <p class="f6 lh-copy measure mt2 mid-gray">
+                        <p className="f6 lh-copy measure mt2 mid-gray">
                             <em>Model:</em> {model}
                         </p>
-                        <p class="f6 lh-copy measure mt2 mid-gray">
+                        <p className="f6 lh-copy measure mt2 mid-gray">
                             <em>Capacity:</em> {capacity}
                         </p>
-                        <div class="flex items-center justify-center">
+                        <div className="flex items-center justify-center">
                             <a
                             href="#0"
-                            class="f5 no-underline black bg-animate hover-bg-black hover-white inline-flex items-center pa3 ba border-box"
+                            className="f5 no-underline black bg-animate hover-bg-black hover-white inline-flex items-center pa3 ba border-box"
                             >
-                            <span class="pr1">Read More</span>
+                            <span className="pr1">Read More</span>
                             <svg
-                                class="w1"
+                                className="w1"
                                 data-icon="chevronRight"
                                 viewBox="0 0 32 32"
                                 style={{ fill: "currentcolor" }}

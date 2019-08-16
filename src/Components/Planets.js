@@ -16,8 +16,8 @@ class Planets extends React.Component {
         return (
             <div>
               <div className="img-container">
-                <img src={process.env.PUBLIC_URL + `/assets/planet-${random}.jpg`} />
-                <div class="text outline">
+                <img src={process.env.PUBLIC_URL + `/assets/planet-${random}.jpg`} alt="" />
+                <div className="text outline">
                     {name}
                     <p>Temperature: {climate}</p>
                     <p>population: {population}</p>

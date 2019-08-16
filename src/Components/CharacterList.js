@@ -6,7 +6,7 @@ const CharacterList = ({people, onRouteChange}) => {
     return (
         <div>
             <Heading title="Popular Characters" />
-            <article class="cf">
+            <article className="cf">
             {people.slice(0,2).map((user, i) => {
         return (
           <Charatcters
@@ -20,9 +20,9 @@ const CharacterList = ({people, onRouteChange}) => {
       })}
             </article>
 
-  <div class="flex items-center justify-center pa4">
-  <button onClick={() => onRouteChange('people')} class="f5 no-underline black bg-animate hover-bg-black hover-white inline-flex items-center pa3 ba border-box mr4 tc">
-    <span class="pl1">VIEW MORE</span>
+  <div className="flex items-center justify-center pa4">
+  <button onClick={() => onRouteChange('people')} className="f5 no-underline black bg-animate hover-bg-black hover-white inline-flex items-center pa3 ba border-box mr4 tc">
+    <span className="pl1">VIEW MORE</span>
   </button>
 </div>
         </div>
