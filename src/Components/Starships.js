@@ -13,6 +13,7 @@ const Starships = ({name, model, capacity}) => {
                         src={process.env.PUBLIC_URL + `/assets/starship-${random}.jpg`}
                         class="db w-100 br--top"
                         alt=""
+                        height="200px"
                         />
                         <div class="pa2 tl ph3-ns pb3-ns">
                         <div class="dt w-100 mt1">

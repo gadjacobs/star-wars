@@ -18,6 +18,7 @@ const Characters = ({name, gender, birthYear}) => {
                       src={process.env.PUBLIC_URL + `/assets/character-${random}.jpg`}
                       class="db"
                       alt=""
+                      height="200px"
                     />
                   </div>
                   <div class="w-100 w-60-ns pl3-ns">
